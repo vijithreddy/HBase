@@ -1,9 +1,15 @@
 Step 1) Choose the node which runs HBASE master on it.
+
 Step 2) Clone YCSB git repository by entering the following command
 $> git clone http://github.com/brianfrankcooper/YCSB.git
-Step 3) After successfully cloning the repository, go to YCSB directory (CD ~/YCSB) and check the pom.xml, make sure that the HBASE version is in match with your installed version. Once you are done with that run the following command
+
+Step 3) After successfully cloning the repository, go to YCSB directory (CD ~/YCSB) and check the pom.xml, 
+make sure that the HBASE version is in match with your installed version. 
+Once you are done with that run the following command
 mvn clean package (Make sure you have maven downloaded)
-Step 4) After maven sets up all the libraries to your YCSB directory. Navigate to /YCSB/hbase/src/main/conf and open hbase-site.xml file. The file looks like following:
+
+Step 4) After maven sets up all the libraries to your YCSB directory. 
+Navigate to /YCSB/hbase/src/main/conf and open hbase-site.xml file. The file looks like following:
 
 <configuration>
   <property>
